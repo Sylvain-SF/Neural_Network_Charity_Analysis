@@ -17,31 +17,34 @@ To achieve our result, we decompose our problem in 2 parts:
   - Our features were all the other data columns included categorical variables after encoding.
   - We also removed from the input data the EIN and NAME columns as they are identification columns and have no influence on the result.
  <br> 
+    
 - Compiling, Training and Evaluating the model:
 <br>
+  
   - At first, we used to create the model with 43 features, 2 hidden layers because the larger the number of hidden layers in a neural network, the longer it will take for the neural network to produce the output, and the more complex problems the neural network can solve. We use in the first layer 80 neurons as a double of features involved and half of it (40) for the second layer.
-  - With this model we were not able to achieve the target model performances (> 75% accuracy).<br>
+  - With this model we were not able to achieve the target model performances (> 75% accuracy).
   
     ![](Images/before_optimization.PNG)
+    
     <br>
-  - To increase or accuracy score we change couples parameters:<br>
+  - To increase or accuracy score we change couples parameters:
  
   1- Increase the numbers of features (70) as well as the number of hidden layers (4) and neurons (275 to start).
     
     ![](Images/optimization_1.PNG)
-  <br>
+ 
   2- Decrease the numbers of features (33).
     
     ![](Images/optimization_2.PNG)
-  <br>
+  
   3- Adding more hidden layers (5) with a reduction of features (33).
     
     ![](Images/optimization_4.PNG)
-  <br>
+ 
   4- Change the output activation function and increase the number of epochs to the training regimen. 
     
     ![](Images/optimization_4.PNG)
-<br>
+
     
 # Summary:
 
